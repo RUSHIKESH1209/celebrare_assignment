@@ -1,0 +1,162 @@
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   overflow: hidden;
+ }
+
+
+ body{
+   background: #091921;
+}
+
+ 
+
+ .board {
+  border: 1px solid black;
+  position: relative;
+  margin: 1.5vw;
+   height: 80vh;
+   width: 97vw;
+   background-color: #dddddd11;
+}
+
+ .buttons {
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+
+
+
+
+ .input {
+   height: 50px;
+   margin: 5px;
+   width: 200px;
+   text-decoration: none;
+   border-radius:8px ;
+   padding: 5px;
+
+ }
+
+ button {
+   width: 80px;
+   height: 50px;
+   margin: 5px;
+   border-radius:8px ;
+
+ }
+
+ button:hover ,input:hover{
+   background-color: #ffc3c326;
+}
+
+ button,select, input, .option {
+   cursor: pointer;
+ z-index: 2;
+ outline: none;
+ border: 1px solid rgba(255, 255, 255, 0.105);
+ background-color: #dddddd11;
+ color: #00ff77;
+}
+
+ select{
+   height: 50px;
+   margin: 5px;
+   border-radius:8px ;
+
+
+ }
+
+ .templateblock {
+   display: inline-block;
+   margin: 5px;
+   padding: 10px;
+   border: 1px solid rgb(255, 255, 255);
+   position: absolute;
+   cursor: move;
+   text-decoration: none;
+   font-family:'Times New Roman', Times, serif;
+   font-size: 22px;
+   border-radius: 7px;
+   color: rgb(2, 255, 196);
+   background-color: rgba(255, 255, 255, 0.207);
+ }
+
+
+
+
+ .buttons {
+   margin-top: 10px;
+ }
+
+
+
+ @media screen and (max-width: 1050px) {
+  .board {
+      height: 70vh;
+   }
+   
+  }
+
+  @media screen and (max-width: 600px) {
+    .board {
+        height: 75vh;
+     }
+     .input {
+      height: 40px;
+      margin: 3px;
+      width: 120px;
+      text-decoration: none;
+      border-radius:8px ;
+      padding: 4px;
+   
+    }
+   
+    button ,select {
+      height: 40px;
+      margin: 3px;
+      width:80px;
+      border-radius:8px ;
+   
+    }
+    #fontsize{
+      width: 40px;
+    }
+
+    }
+  
+
+    @media screen and (max-width: 400px) {
+      .board {
+
+          height: 75vh;
+
+       }
+       .input {
+        height: 35px;
+        margin: 3px;
+        width: 120px;
+        text-decoration: none;
+        border-radius:8px ;
+        padding: 4px;
+        font-size: 12px;
+     
+      }
+     
+      button ,select {
+        font-size: 12px;
+        height: 35px;
+        margin: 3px;
+        width:60px;
+        border-radius:8px ;
+     
+      }
+      #fontsize{
+        width: 30px;
+      }
+  
+      }
+    
